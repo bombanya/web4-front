@@ -174,15 +174,15 @@ class MainPage extends Component{
                     </Card>
                 </div>
 
-                <div className="p-col-10">
+                <div className="p-col-10 p-xl-6">
                     <Card title="Points table">
                         <DataTable value={this.state.userPoints} scrollable scrollHeight="500px" >
-                            <Column field="timeOfRequest" header="Time of request"/>
-                            <Column field="workTime" header="Script work time"/>
-                            <Column field="r" header="R"/>
-                            <Column field="x" header="X"/>
-                            <Column field="y" header="Y"/>
-                            <Column field="result" header="Result"/>
+                            <Column field="timeOfRequest" headerStyle={{ width: '150px' }} header="Time of request"/>
+                            <Column field="workTime" headerStyle={{ width: '150px' }} header="Script work time"/>
+                            <Column field="r" headerStyle={{ width: '100px' }} header="R"/>
+                            <Column field="x" headerStyle={{ width: '100px' }} header="X"/>
+                            <Column field="y" headerStyle={{ width: '100px' }} header="Y"/>
+                            <Column field="result" headerStyle={{ width: '200px' }} header="Result"/>
                         </DataTable>
                     </Card>
                 </div>

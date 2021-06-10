@@ -12,7 +12,7 @@ class App extends Component {
             username : '',
             password : '',
             isLogged : false,
-            serverURL : "https://bombanya-weblab4.herokuapp.com/",
+            serverURL : "http://localhost:8080/",
             loginLoading : false,
             loginError : false,
             errorMessage : ''
