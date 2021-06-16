@@ -106,10 +106,6 @@ class MainPage extends Component{
 
     componentDidMount() {
         this.getAllUserPoints();
-        window.addEventListener('resize', this.managePoints);
-    }
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.managePoints);
     }
 
     render() {

@@ -62,6 +62,8 @@ class App extends Component {
             return;
         }
 
+        this.setState({loginLoading : true});
+
         const bcrypt = require('bcryptjs');
 
         const hash = await bcrypt.hash(currentPassword, 12);
